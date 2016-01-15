@@ -1,10 +1,10 @@
 #!/bin/bash
 
-ln -s .bashrc       ~/.bashrc
-ln -s .bash_profile ~/.bash_profile
-ln -s .gitconfig    ~/.gitconfig
-ln -s .tmux.conf    ~/.tmux.conf
-ln -s .tmux         ~/.tmux
+ln -s $(readlink -f .)/.bashrc       ~/.bashrc
+ln -s $(readlink -f .)/.bash_profile ~/.bash_profile
+ln -s $(readlink -f .)/.gitconfig    ~/.gitconfig
+ln -s $(readlink -f .)/.tmux.conf    ~/.tmux.conf
+ln -s $(readlink -f .)/.tmux         ~/.tmux
 
 # git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 # vim +BundleInstall +qall
