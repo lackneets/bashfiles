@@ -1,0 +1,9 @@
+[user]
+	name = Lackneets
+	email = lackneets@gmail.com
+[push]
+	default = simple
+[color]
+  ui = auto
+[core]
+  quotepath = false
