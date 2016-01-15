@@ -1,8 +1,8 @@
 [user]
-	name = Lackneets
-	email = lackneets@gmail.com
+  name = Lackneets
+  email = lackneets@gmail.com
 [push]
-	default = simple
+  default = matching
 [color]
   ui = auto
 [core]
