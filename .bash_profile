@@ -24,7 +24,7 @@ alias cwww='chown -R www-data'
 
 alias xx='exit;'
 alias ..='cd ..'
-alias ll='ls -l'
+alias ll='ls -l | awk '"'"'{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/) *2^(8-i));if(k)printf("%0o ",k);print}'"'"''
 alias cls='clear'
 alias tmuxa='tmux attach -d'
 alias lll='du -a -h --max-depth=1 | sort -hr'
